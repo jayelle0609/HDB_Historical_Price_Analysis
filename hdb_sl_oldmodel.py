@@ -7,7 +7,7 @@ from PIL import Image
 import math
 
 # --- Title and Description ---
-st.set_page_config(page_title="HDB Resale Price Prediction", layout="wide")
+st.set_page_config(page_title="Generic HDB Resale Price Prediction", layout="wide")
 
 
 # Inject custom CSS for the sidebar background
@@ -43,7 +43,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-st.title("🏠 HDB Resale Price Prediction App - Old Model")
+st.title("🏠 Generic HDB Resale Price Prediction App - Accuracy Model")
 
 
 
