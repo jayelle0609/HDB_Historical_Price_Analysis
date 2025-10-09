@@ -274,6 +274,7 @@ links = {
     "Portfolio Website 2": "https://jayelle0609.github.io/",
     "Tableau Visualizations": "https://public.tableau.com/app/profile/jialingteo/vizzes",
     "GitHub Projects & Code": "https://github.com/jayelle0609",
+    "New HDB Model App": "https://jayellehdb.streamlit.app/,
     "Dad Jokes Generator App (API Automated)": "https://jayelledadjokes.streamlit.app/"
 }
 
