@@ -274,7 +274,7 @@ links = {
     "Portfolio Website 2": "https://jayelle0609.github.io/",
     "Tableau Visualizations": "https://public.tableau.com/app/profile/jialingteo/vizzes",
     "GitHub Projects & Code": "https://github.com/jayelle0609",
-    "New HDB Model App": "https://jayellehdb.streamlit.app/,
+    "New HDB Model App": "https://jayellehdb.streamlit.app/",
     "Dad Jokes Generator App (API Automated)": "https://jayelledadjokes.streamlit.app/"
 }
 
@@ -285,4 +285,8 @@ st.markdown("""
 ---
 *Feel free to reach out or explore more!*  
 <span style="font-size:10px;">
-[Email Me!](mailto:jayelleteo@gmail.com) | [WhatsApp Me!](https://wa.me/6580402496""")
+[Email Me!](mailto:jayelleteo@gmail.com) | [WhatsApp Me!](https://wa.me/6580402496
+
+I have some cavaets regarding the newer model. While the new model offers greater specificity,its overall accuracy may not generalize well.
+[See why here](https://github.com/jayelle0609/HDB_Historical_Price_Analysis/README). """)
+
