@@ -101,7 +101,17 @@ input_dict = {
 input_df = pd.DataFrame([input_dict])
 
 # Load the saved model pipeline
-model = joblib.load('hdb_price_model.joblib')
+from huggingface_hub import hf_hub_download
+
+@st.cache_resource
+def load_model():
+    model_path = hf_hub_download(
+        repo_id="jayelleteo/hdb_predict",      
+        filename="hdb_price_model.joblib"       
+    )
+    return joblib.load(model_path)
+
+model = load_model()
 
 # Load and cache CPI forecast data
 @st.cache_data
