@@ -169,17 +169,17 @@ st.markdown("""
 ---
 ### About this Model
 - **Data:** Multiple HDB resale transactions (1990-2020) data sets from Data.gov.sg were merged, cleaned and analysed via Python. 
-- **Feature Engineering** : Then, nominal prices were adjusted for inflation with Consumer Price Index (CPI) data, reflecting real prices.
-- **Features:** Year, Lease Years Left, Flat Type, Town, Storey Range.
-- **Feature Importance** : See diagram below
-
 - **Model:** 
             HDB Price Prediction -- Random Forest Regressor |
             CPI Forecasting -- Linear Regression.
 - **Output:** Predicted prices based on selected features multiplied by forecasted CPI value.
+- **Feature Engineering** : Then, nominal prices were adjusted for inflation with Consumer Price Index (CPI) data, reflecting real prices.
+- **Features:** Year, Floor Area (Sqm), Lease Years Left, Flat Type, Town, Storey Range, Flat Model
+- **Feature Importance** : See diagram below
+
 """)
 
-st.image("pyviz7featueimp.png", caption="Feature Importance", use_column_width=True)
+st.image("pyviz7featueimp.png", caption="Feature Importance", use_container_width=True)
 
 st.markdown("<br>", unsafe_allow_html=True)          
 st.markdown("""
