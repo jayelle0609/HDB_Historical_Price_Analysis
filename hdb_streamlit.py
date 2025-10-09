@@ -75,7 +75,7 @@ st.image(
 # --- Sidebar for User Input ---
 st.sidebar.header("Select Flat Features")
 
-flat_types = ['1room' ,'2 room', '3 room', '4 room', '5 room', 'executive', 'multi generation']
+flat_types = ['2 room', '3 room', '4 room', '5 room', 'executive', 'multi generation']
 towns = ['ang mo kio', 'bedok', 'bishan', 'bukit batok', 'bukit merah', 'bukit panjang', 'bukit timah',
          'central area', 'choa chu kang', 'clementi', 'geylang', 'hougang', 'jurong east', 'jurong west',
          'kallang whampoa', 'marine parade', 'pasir ris', 'punggol', 'queenstown', 'sengkang', 'serangoon',
