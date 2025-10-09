@@ -288,10 +288,10 @@ st.markdown("""
 [Email Me!](mailto:jayelleteo@gmail.com) | [WhatsApp Me!](https://wa.me/6580402496)
 </span>
 
-<br><br>
-
-<span style="font-size:8px; color:gray;">
-I have some caveats regarding the newer model. While the new model offers greater specificity, its overall accuracy may not generalize well.  
+<br>
+<span style="font-size:10px; color:gray;">
+I have some caveats regarding the newer model. 
+While the new model offers greater specificity, its overall accuracy may not generalize well.  
 <a href="https://github.com/jayelle0609/HDB_Historical_Price_Analysis/README" target="_blank">See why here</a>.
 </span>
 """, unsafe_allow_html=True)
