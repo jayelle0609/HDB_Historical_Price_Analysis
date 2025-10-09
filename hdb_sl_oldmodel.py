@@ -95,12 +95,10 @@ storey_range = st.sidebar.selectbox("Storey Range", storey_ranges)
 # Prepare input dict & DataFrame for prediction
 input_dict = {
     'year': year,
-    'floor_area_sqm': floor_area_sqm,
     'lease_years_left': lease_years_left,
     'flat_type': flat_type,
     'town': town,
     'storey_range': storey_range,
-    'flat_model': 'None'  # default value, can be modified to add more options
 }
 input_df = pd.DataFrame([input_dict])
 
