@@ -70,9 +70,9 @@ This project aims to analyze and forecast HDB resale prices in Singapore using h
 
 💻 [Portfolio Website](https://jayelle0609.github.io/)
 
-🤖 [New HDB Price Prediction App](https://jayellehdb.streamlit.app/)
+🤖 [New HDB Price Prediction App](https://jayellehdb.streamlit.app/) (More feature specificity but may sacrifice accuracy)
 
-🤖 [Old HDB Price Prediction App](https://jayellehdb2.streamlit.app/)
+🤖 [Old HDB Price Prediction App](https://jayellehdb2.streamlit.app/) (I find this better and more accurate)
 
 🤖 [Dad Jokes Generator APP (API Automated)](https://jayelledadjokes.streamlit.app)
 
