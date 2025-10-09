@@ -290,7 +290,9 @@ st.markdown("""
 
 <br><br>
 
+<span style="font-size:8px; color:gray;">
 I have some caveats regarding the newer model. While the new model offers greater specificity, its overall accuracy may not generalize well.  
-[See why here](https://github.com/jayelle0609/HDB_Historical_Price_Analysis/README).
+<a href="https://github.com/jayelle0609/HDB_Historical_Price_Analysis/README" target="_blank">See why here</a>.
+</span>
 """, unsafe_allow_html=True)
 
