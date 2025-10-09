@@ -75,7 +75,7 @@ st.image(
 # --- Sidebar for User Input ---
 st.sidebar.header("Select Flat Features")
 
-flat_types = ['2 room', '3 room', '4 room', '5 room', 'executive', 'multi generation']
+flat_types = ['1room' ,'2 room', '3 room', '4 room', '5 room', 'executive', 'multi generation']
 towns = ['ang mo kio', 'bedok', 'bishan', 'bukit batok', 'bukit merah', 'bukit panjang', 'bukit timah',
          'central area', 'choa chu kang', 'clementi', 'geylang', 'hougang', 'jurong east', 'jurong west',
          'kallang whampoa', 'marine parade', 'pasir ris', 'punggol', 'queenstown', 'sengkang', 'serangoon',
@@ -83,8 +83,16 @@ towns = ['ang mo kio', 'bedok', 'bishan', 'bukit batok', 'bukit merah', 'bukit p
 storey_ranges = ['01 TO 03', '04 TO 06', '07 TO 09', '10 TO 12', '13 TO 15', '16 TO 18', '19 TO 21',
                  '22 TO 24', '25 TO 27', '28 TO 30', '31 TO 33', '34 TO 36', '37 TO 39', '40 TO 42',
                  '43 TO 45', '46 TO 48', '49 TO 51']
+flat_model = ['None', 'improved', 'new generation', 'model a', 'standard', 'simplified',
+       'model a maisonette', 'apartment', 'maisonette', 'terrace',
+       '2 room', 'improved maisonette', 'multi generation',
+       'premium apartment', 'adjoined flat', 'premium maisonette',
+       'model a2', 'dbss', 'type s1', 'type s2', 'premium apartment loft']
+
+
 
 year = st.sidebar.slider("Year of Purchase", min_value=2025, max_value=2040, value=2025)
+floor_area_sqm = st.sidebar.slider("Floor Area (sqm)", min_value=10, max_value=307, value=90)
 lease_years_left = st.sidebar.slider("Lease Years Left", min_value=1, max_value=99, value=65)
 flat_type = st.sidebar.selectbox("Flat Type", flat_types)
 town = st.sidebar.selectbox("Town", towns)
@@ -93,10 +101,12 @@ storey_range = st.sidebar.selectbox("Storey Range", storey_ranges)
 # Prepare input dict & DataFrame for prediction
 input_dict = {
     'year': year,
+    'floor_area_sqm': floor_area_sqm,
     'lease_years_left': lease_years_left,
     'flat_type': flat_type,
     'town': town,
-    'storey_range': storey_range
+    'storey_range': storey_range,
+    'flat_model': 'None'  # default value, can be modified to add more options
 }
 input_df = pd.DataFrame([input_dict])
 
@@ -106,8 +116,8 @@ from huggingface_hub import hf_hub_download
 @st.cache_resource
 def load_model():
     model_path = hf_hub_download(
-        repo_id="jayelleteo/hdb_predict",      
-        filename="hdb_price_model.joblib"       
+        repo_id="jayelleteo/hdb_model_new",      
+        filename="rf_model_pipeline.joblib"       
     )
     return joblib.load(model_path)
 
@@ -127,7 +137,7 @@ def get_cpi_for_year(year):
     try:
         return cpi_forecast_df.loc[year, 'cpi']
     except KeyError:
-        return 100  # fallback CPI if year not found
+        return cpi_forecast_2020_2040['cpi'].median()  # fallback CPI if year not found
 
 cpi = get_cpi_for_year(year)
 
@@ -141,10 +151,13 @@ predicted_nominal_price = predicted_real_price * (cpi / 100)
 st.header("Predicted HDB Resale Prices")
 st.markdown(f"""
 - **Year:** {year}
+- **Floor Area (sqm):** {floor_area_sqm}
 - **Lease Years Left:** {lease_years_left}
 - **Flat Type:** {flat_type.title()}
 - **Town:** {town.title()}
 - **Storey Range:** {storey_range}
+- **Flat Model:** None (default)
+
 """)
 
 st.success(f"**Predicted Real Price (Inflation-adjusted):** SGD ${predicted_real_price:,.0f}")
@@ -157,11 +170,15 @@ st.markdown("""
 - **Data:** Multiple HDB resale transactions (1990-2020) data sets from Data.gov.sg were merged, cleaned and analysed via Python. 
 - **Feature Engineering** : Then, nominal prices were adjusted for inflation with Consumer Price Index (CPI) data, reflecting real prices.
 - **Features:** Year, Lease Years Left, Flat Type, Town, Storey Range.
+- **Feature Importance** : See diagram below
+
 - **Model:** 
             HDB Price Prediction -- Random Forest Regressor |
             CPI Forecasting -- Linear Regression.
 - **Output:** Predicted prices based on selected features multiplied by forecasted CPI value.
 """)
+
+st.image("pyviz7featueimp.png", caption="Feature Importance", use_column_width=True)
 
 st.markdown("<br>", unsafe_allow_html=True)          
 st.markdown("""
