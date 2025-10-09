@@ -116,8 +116,7 @@ model = load_model()
 # Load and cache CPI forecast data
 @st.cache_data
 def load_cpi_forecast():
-    path = "/for_model_future_cpi_forecast.csv"
-    df = pd.read_csv(path)
+    df = pd.read_csv("for_model_future_cpi_forecast.csv")
     df.set_index('year', inplace=True)  # set year as index for easy lookup
     return df
 
