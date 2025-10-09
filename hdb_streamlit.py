@@ -83,7 +83,7 @@ towns = ['ang mo kio', 'bedok', 'bishan', 'bukit batok', 'bukit merah', 'bukit p
 storey_ranges = ['01 TO 03', '04 TO 06', '07 TO 09', '10 TO 12', '13 TO 15', '16 TO 18', '19 TO 21',
                  '22 TO 24', '25 TO 27', '28 TO 30', '31 TO 33', '34 TO 36', '37 TO 39', '40 TO 42',
                  '43 TO 45', '46 TO 48', '49 TO 51']
-flat_model = ['None', 'improved', 'new generation', 'model a', 'standard', 'simplified',
+flat_models = ['None', 'improved', 'new generation', 'model a', 'standard', 'simplified',
        'model a maisonette', 'apartment', 'maisonette', 'terrace',
        '2 room', 'improved maisonette', 'multi generation',
        'premium apartment', 'adjoined flat', 'premium maisonette',
@@ -97,6 +97,7 @@ lease_years_left = st.sidebar.slider("Lease Years Left", min_value=1, max_value=
 flat_type = st.sidebar.selectbox("Flat Type", flat_types)
 town = st.sidebar.selectbox("Town", towns)
 storey_range = st.sidebar.selectbox("Storey Range", storey_ranges)
+flat_model = st.sidebar.selectbox("Flat Model", flat_models)
 
 # Prepare input dict & DataFrame for prediction
 input_dict = {
