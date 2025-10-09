@@ -27,8 +27,8 @@ This project aims to analyze and forecast HDB resale prices in Singapore using h
 - CPI values were forecasted with linear regression.
 - **Deployed the model on a web app** for user predictions
 - CHECK MY MODEL OUT!!! 🕺🕺😊😊
-- 🤖 [HDB Price Prediction App (New Model - More Features](https://jayellehdb.streamlit.app/)
-- 🤖 [HDB Price Prediction App (Old Model - More Generic and Accurate](https://jayellehdb.streamlit.app/)
+- 🤖 [HDB Price Prediction App (New Model - More Features)](https://jayellehdb.streamlit.app/)
+- 🤖 [HDB Price Prediction App (Old Model - More Generic and Accurate)](https://jayellehdb.streamlit.app/)
 
  ### Old and New Model Evaluation
 
