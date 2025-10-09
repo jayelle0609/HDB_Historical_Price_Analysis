@@ -15,7 +15,7 @@ st.markdown("""
     <style>
     /* Sidebar background image */
     [data-testid="stSidebar"] {
-        background-image: url("./HDB_Streamlit_App/hdb1.png");
+        background-image: url("./hdb2.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
