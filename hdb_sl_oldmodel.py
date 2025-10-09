@@ -287,6 +287,7 @@ st.markdown("""
 <span style="font-size:10px;">
 [Email Me!](mailto:jayelleteo@gmail.com) | [WhatsApp Me!](https://wa.me/6580402496)
 </span>
+<br>
 <span style="font-size:10px; color:black;">
 I have some caveats regarding the newer model. 
 While the new model offers greater specificity, its overall accuracy may not generalize well.  
