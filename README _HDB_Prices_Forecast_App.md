@@ -25,9 +25,9 @@ This project aims to analyze and forecast HDB resale prices in Singapore using h
 ### 3. **Forecasting**
 - Build a Random Forest Regression model to to predict future HDB prices based on user-selected features, adjusted for CPI inflation.
 - CPI values were forecasted with linear regression.
-- [Deployed the model on a web app for user predictions](streamlit.com).
+- **Deployed the model on a web app** for user predictions
 - CHECK MY MODEL OUT!!! 🕺🕺😊😊
-
+- 🤖 [HDB Price Prediction App](https://jayelledadjokes.streamlit.app/)
 ---
 
 ### 4. **Visualization**
@@ -55,7 +55,14 @@ This project aims to analyze and forecast HDB resale prices in Singapore using h
 
 **Jialing Teo**  
 📌 [GitHub](https://github.com/jayelle0609)  
+
 📊 [Tableau Public](https://public.tableau.com/app/profile/jialingteo)
+
+💻 [Portfolio Website](https://jayelle0609.github.io/)
+
+🤖 [HDB Price Prediction App](https://jayelledadjokes.streamlit.app/)
+
+🤖 [Dad Jokes Generator APP (API Automated)](https://jayelledadjokes.streamlit.app)
 
 ---
 
