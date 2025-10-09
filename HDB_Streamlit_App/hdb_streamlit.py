@@ -15,7 +15,7 @@ st.markdown("""
     <style>
     /* Sidebar background image */
     [data-testid="stSidebar"] {
-        background-image: url("./hdb2.png");
+        background-image: url("https://www.homeguide.com.sg/wp-content/uploads/2018/02/New-HDB-Grant-Could-Allow-Flat-Owners-to-Customise-Their-Homes.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -237,7 +237,7 @@ html_code = f"""
 <div style="text-align: center; margin-top: 30px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333;">
 <p style="font-size: 0.8rem; color: #6c757d; font-style: italic;">
   <br><br>Hi, I am Teo Jia Ling (Jayelle). <br> I love visualizing and deriving insights from complicated data! </p>
-</div> 
+</div>
 """
 
 st.markdown(html_code, unsafe_allow_html=True)
