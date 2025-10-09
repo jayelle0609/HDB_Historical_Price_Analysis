@@ -1,8 +1,7 @@
 streamlit
-joblib
 pandas
 numpy
-Pillow
-base64
+joblib
+scikit-learn
 huggingface_hub
 
