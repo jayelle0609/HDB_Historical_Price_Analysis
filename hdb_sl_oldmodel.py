@@ -285,8 +285,12 @@ st.markdown("""
 ---
 *Feel free to reach out or explore more!*  
 <span style="font-size:10px;">
-[Email Me!](mailto:jayelleteo@gmail.com) | [WhatsApp Me!](https://wa.me/6580402496
+[Email Me!](mailto:jayelleteo@gmail.com) | [WhatsApp Me!](https://wa.me/6580402496)
+</span>
 
-I have some cavaets regarding the newer model. While the new model offers greater specificity,its overall accuracy may not generalize well.
-[See why here](https://github.com/jayelle0609/HDB_Historical_Price_Analysis/README). """)
+<br><br>
+
+I have some caveats regarding the newer model. While the new model offers greater specificity, its overall accuracy may not generalize well.  
+[See why here](https://github.com/jayelle0609/HDB_Historical_Price_Analysis/README).
+""", unsafe_allow_html=True)
 
