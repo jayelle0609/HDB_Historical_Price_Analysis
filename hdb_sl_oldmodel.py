@@ -286,4 +286,4 @@ st.markdown("""
 ---
 *Feel free to reach out or explore more!*  
 <span style="font-size:10px;">
-[Email Me!](mailto:jayelleteo@gmail.com) | [WhatsApp Me!](https://wa.me/6580402496)
+[Email Me!](mailto:jayelleteo@gmail.com) | [WhatsApp Me!](https://wa.me/6580402496""")
