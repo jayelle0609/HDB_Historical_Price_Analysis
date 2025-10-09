@@ -184,7 +184,7 @@ def img_to_base64(img_path):
         b64_str = base64.b64encode(img_file.read()).decode()
     return f"data:image/jpg;base64,{b64_str}"
 
-image_path = img_to_base64("/Users/jialing/Downloads/neilangelomartinez.github.io-main/assets/images/hero-banner.jpg")
+image_path = img_to_base64("hero-banner.jpg")
 
 html_code = f"""
 <style>
