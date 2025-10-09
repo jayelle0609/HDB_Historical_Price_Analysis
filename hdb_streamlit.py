@@ -7,7 +7,7 @@ from PIL import Image
 import math
 
 # --- Title and Description ---
-st.set_page_config(page_title="HDB Resale Price Prediction", layout="wide")
+st.set_page_config(page_title="Specific HDB Resale Price Prediction", layout="wide")
 
 
 # Inject custom CSS for the sidebar background
@@ -43,7 +43,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-st.title("🏠 HDB Resale Price Prediction App")
+st.title("🏠 HDB Resale Price Prediction App - Specificity Model")
 
 
 
@@ -288,7 +288,7 @@ links = {
     "Portfolio Website 2": "https://jayelle0609.github.io/",
     "Tableau Visualizations": "https://public.tableau.com/app/profile/jialingteo/vizzes",
     "GitHub Projects & Code": "https://github.com/jayelle0609",
-    "Old HDB Model App": "https://jayellehdb2.streamlit.app/",
+    "Generic HDB Model App": "https://jayellehdb.streamlit.app/",
     "Dad Jokes Generator App (API Automated)": "https://jayelledadjokes.streamlit.app/"
 }
 
