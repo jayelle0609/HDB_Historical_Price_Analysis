@@ -15,7 +15,7 @@ st.markdown("""
     <style>
     /* Sidebar background image */
     [data-testid="stSidebar"] {
-        background-image: url("https://www.homeguide.com.sg/wp-content/uploads/2018/02/New-HDB-Grant-Could-Allow-Flat-Owners-to-Customise-Their-Homes.png");
+        background-image: url("./HDB_Streamlit_App/hdb1.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
