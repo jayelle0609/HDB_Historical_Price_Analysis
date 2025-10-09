@@ -237,7 +237,7 @@ html_code = f"""
 <div style="text-align: center; margin-top: 30px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333;">
 <p style="font-size: 0.8rem; color: #6c757d; font-style: italic;">
   <br><br>Hi, I am Teo Jia Ling (Jayelle). <br> I love visualizing and deriving insights from complicated data! </p>
-</div>
+</div> 
 """
 
 st.markdown(html_code, unsafe_allow_html=True)
