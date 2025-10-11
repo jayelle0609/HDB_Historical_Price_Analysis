@@ -284,8 +284,7 @@ Welcome! Here are some of my personal websites and portfolio pages where you can
 
 # List of links
 links = {
-    "Personal Website 1": "https://jayelle0609.github.io/",
-    "Portfolio Website 2": "https://jayelle0609.github.io/",
+    "Portfolio Website": "https://jayelle0609.github.io/",
     "Tableau Visualizations": "https://public.tableau.com/app/profile/jialingteo/vizzes",
     "GitHub Projects & Code": "https://github.com/jayelle0609",
     "Generic HDB Model App": "https://jayellehdbgeneral.streamlit.app/",
