@@ -16,7 +16,7 @@ st.markdown("""
     <style>
     /* Sidebar background image */
     [data-testid="stSidebar"] {
-        background-image: url("https://github.com/jayelle0609/HDB_Historical_Price_Analysis/blob/main/hdb.jpg");
+        background-image: url("https://raw.githubusercontent.com/jayelle0609/HDB_Historical_Price_Analysis/main/hdb.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
