@@ -9,40 +9,6 @@ import math
 # --- Title and Description ---
 st.set_page_config(page_title="Generic HDB Resale Price Prediction", layout="wide")
 
-def get_base64_of_bin_file(bin_file):
-    with open(bin_file, 'rb') as f:
-        data = f.read()
-    return base64.b64encode(data).decode()
-
-img_path = "hdb.jpg"  # path to your local image file
-img_base64 = get_base64_of_bin_file(img_path)
-
-
-css = f"""
-<style>
-[data-testid="stSidebar"] {{
-    background-image: url("data:image/jpg;base64,{img_base64}");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}}
-
-[data-testid="stSidebar"]::before {{
-    content: "";
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background-color: rgba(255,255,255,0.8);
-    z-index: 0;
-}}
-
-[data-testid="stSidebar"] > div:first-child {{
-    position: relative;
-    z-index: 1;
-}}
-</style>
-"""
-
 st.markdown(css, unsafe_allow_html=True)
 ---
 # Inject custom CSS for the sidebar background
