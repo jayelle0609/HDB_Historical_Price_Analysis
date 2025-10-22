@@ -16,16 +16,16 @@ def get_base64_image(path):
 img_base64 = get_base64_image("hdb.jpg")
 
 # Inject custom CSS for the sidebar background
-st.markdown("""
+st.markdown(f"""
     <style>
     /* Sidebar background image */
-    [data-testid="stSidebar"] {
+    [data-testid="stSidebar"] {{
         background-image: url("data:image/jpg;base64,{img_base64}");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         position: relative;
-    }
+    }}
 
     /* White overlay ("white-wash") on top of the background */
     [data-testid="stSidebar"]::before {
