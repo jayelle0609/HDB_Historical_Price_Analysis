@@ -12,16 +12,16 @@ st.set_page_config(page_title="Generic HDB Resale Price Prediction", layout="wid
 st.markdown(css, unsafe_allow_html=True)
 ---
 # Inject custom CSS for the sidebar background
-st.markdown(f"""
+st.markdown("""
     <style>
     /* Sidebar background image */
-    [data-testid="stSidebar"] {{
-        background-image: url("data:image/jpg;base64,{img_base64}");
+    [data-testid="stSidebar"] {
+        background-image: url("https://drive.google.com/file/d/1vnNYEWjyplJNBaixHh7pMWtyKuWEyHie/view?usp=sharing);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         position: relative;
-    }}
+    }
 
     /* White overlay ("white-wash") on top of the background */
     [data-testid="stSidebar"]::before {
