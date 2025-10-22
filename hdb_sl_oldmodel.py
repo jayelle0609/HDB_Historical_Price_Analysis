@@ -10,7 +10,7 @@ import math
 st.set_page_config(page_title="Generic HDB Resale Price Prediction", layout="wide")
 
 st.markdown(css, unsafe_allow_html=True)
----
+
 
 # Inject custom CSS for the sidebar background
 st.markdown("""
