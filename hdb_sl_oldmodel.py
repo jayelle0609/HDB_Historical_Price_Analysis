@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 import numpy as np
 from PIL import Image
-
+import base64
 import math
 
 # --- Title and Description ---
