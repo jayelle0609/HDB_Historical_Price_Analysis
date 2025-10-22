@@ -16,7 +16,7 @@ st.markdown("""
     <style>
     /* Sidebar background image */
     [data-testid="stSidebar"] {
-        background-image: url("https://drive.google.com/file/d/1vnNYEWjyplJNBaixHh7pMWtyKuWEyHie/view?usp=sharing);
+        background-image: url("https://drive.google.com/uc?export=view&id=1vnNYEWjyplJNBaixHh7pMWtyKuWEyHie);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
