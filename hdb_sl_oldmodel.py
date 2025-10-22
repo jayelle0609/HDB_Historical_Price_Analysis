@@ -9,13 +9,18 @@ import math
 # --- Title and Description ---
 st.set_page_config(page_title="Generic HDB Resale Price Prediction", layout="wide")
 
+def get_base64_image(path):
+    with open(path, "rb") as img_file:
+        return base64.b64encode(img_file.read()).decode()
+
+img_base64 = get_base64_image("hdb.jpg")
 
 # Inject custom CSS for the sidebar background
 st.markdown("""
     <style>
     /* Sidebar background image */
     [data-testid="stSidebar"] {
-        background-image: url("hdb.jpg");
+        background-image: url(""data:image/jpg;base64,{img_base64}");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
