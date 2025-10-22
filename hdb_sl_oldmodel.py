@@ -16,7 +16,7 @@ st.markdown("""
     <style>
     /* Sidebar background image */
     [data-testid="stSidebar"] {
-        background-image: url("https://imgur.com/a/GUZC48Q");
+        background-image: url("https://i.imgur.com/hAp2faQ.jpeg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
