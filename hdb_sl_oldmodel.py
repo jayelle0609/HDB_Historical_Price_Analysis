@@ -20,7 +20,7 @@ st.markdown("""
     <style>
     /* Sidebar background image */
     [data-testid="stSidebar"] {
-        background-image: url(""data:image/jpg;base64,{img_base64}");
+        background-image: url("data:image/jpg;base64,{img_base64}");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
