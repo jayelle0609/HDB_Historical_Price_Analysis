@@ -21,7 +21,7 @@ img_base64 = get_base64_of_bin_file(img_path)
 css = f"""
 <style>
 [data-testid="stSidebar"] {{
-    background-image: url("data:image/jpeg;base64,{img_base64}");
+    background-image: url("data:image/jpg;base64,{img_base64}");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
