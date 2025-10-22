@@ -11,11 +11,12 @@ st.set_page_config(page_title="Generic HDB Resale Price Prediction", layout="wid
 
 st.markdown(css, unsafe_allow_html=True)
 ---
+
 # Inject custom CSS for the sidebar background
 st.markdown("""
     <style>
-    /* Streamlit sidebar main container */
-    .css-1d391kg {  /* This is the current sidebar container class */
+    /* Sidebar background image */
+    [data-testid="stSidebar"] {
         background-image: url("https://i.imgur.com/hAp2faQ.jpeg");
         background-size: cover;
         background-position: center;
@@ -23,18 +24,20 @@ st.markdown("""
         position: relative;
     }
 
-    /* White overlay */
-    .css-1d391kg::before {
+    /* White overlay ("white-wash") on top of the background */
+    [data-testid="stSidebar"]::before {
         content: "";
         position: absolute;
-        top: 0; left: 0;
-        width: 100%; height: 100%;
-        background-color: rgba(255, 255, 255, 0.55);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.75); /* white wash */
         z-index: 0;
     }
 
-    /* Make sidebar content appear above overlay */
-    .css-1d391kg > div {
+    /* Make sure sidebar content appears above the overlay */
+    [data-testid="stSidebar"] > div:first-child {
         position: relative;
         z-index: 1;
     }
